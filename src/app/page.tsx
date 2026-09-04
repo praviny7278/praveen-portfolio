@@ -338,42 +338,68 @@ export default function Home() {
       {/* Work */}
       <section id="work" className="relative z-10">
         <div className="mx-auto max-w-7xl px-6 py-24 lg:px-8 lg:py-32">
-          <p className="section-label">04 / WORK</p>
+          <p className="section-label">04 / CAPABILITIES</p>
 
-          <div className="mt-5 flex flex-col justify-between gap-6 lg:flex-row lg:items-end">
-            <h2 className="section-title max-w-3xl">
-              Building the next set of products.
+          <div className="mt-5 max-w-3xl">
+            <h2 className="section-title">
+              From business idea to working software.
             </h2>
 
-            <span className="w-fit rounded-full border border-violet-400/20 bg-violet-400/5 px-4 py-2 text-sm text-violet-300">
-              Portfolio expanding
-            </span>
+            <p className="mt-6 text-lg leading-8 text-zinc-400">
+              Every project is different. I choose the right approach based on
+              your users, business requirements, timeline and goals.
+            </p>
           </div>
 
-          <div className="mt-16 overflow-hidden rounded-3xl border border-white/[0.08] bg-gradient-to-br from-violet-500/[0.08] via-transparent to-cyan-500/[0.05] p-8 sm:p-12 lg:p-16">
-            <div className="max-w-2xl">
-              <span className="text-sm font-medium text-violet-400">
-                SELECTED DEMONSTRATIONS
-              </span>
+          <div className="mt-16 grid gap-5 md:grid-cols-3">
+            <article className="group rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 transition hover:-translate-y-1 hover:border-violet-400/30 hover:bg-white/[0.04]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-500/10 text-violet-400">
+                01
+              </div>
 
-              <h3 className="mt-5 text-3xl font-semibold tracking-tight sm:text-4xl">
-                Real-world product concepts are on the way.
+              <h3 className="mt-8 text-xl font-semibold">
+                Business Platforms
               </h3>
 
-              <p className="mt-5 leading-7 text-zinc-400">
-                I'm building a collection of product demonstrations covering
-                SaaS, e-commerce, booking platforms, dashboards and
-                AI-powered applications.
+              <p className="mt-4 text-sm leading-6 text-zinc-500">
+                Custom dashboards, booking systems, customer portals,
+                management platforms and internal business tools.
               </p>
+            </article>
+
+            <article className="group rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 transition hover:-translate-y-1 hover:border-cyan-400/30 hover:bg-white/[0.04]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-500/10 text-cyan-400">
+                02
+              </div>
+
+              <h3 className="mt-8 text-xl font-semibold">
+                Digital Products
+              </h3>
 
               <p className="mt-4 text-sm leading-6 text-zinc-500">
-                These demonstrations are clearly presented as concept work and
-                are designed to show how I approach real business problems.
+                SaaS platforms, MVPs, e-commerce products and customer-facing
+                web and mobile applications.
               </p>
-            </div>
+            </article>
+
+            <article className="group rounded-2xl border border-white/[0.08] bg-white/[0.025] p-7 transition hover:-translate-y-1 hover:border-fuchsia-400/30 hover:bg-white/[0.04]">
+              <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-fuchsia-500/10 text-fuchsia-400">
+                03
+              </div>
+
+              <h3 className="mt-8 text-xl font-semibold">
+                Automation & AI
+              </h3>
+
+              <p className="mt-4 text-sm leading-6 text-zinc-500">
+                AI-powered features, API integrations and automated workflows
+                designed to reduce repetitive work and improve efficiency.
+              </p>
+            </article>
           </div>
         </div>
       </section>
+
 
       {/* CTA */}
       <section id="contact" className="relative z-10">
@@ -397,14 +423,14 @@ export default function Home() {
               </p>
 
               <a
-                href="mailto:hello@yourdomain.com"
+                href="mailto:praviny408@gmail.com"
                 className="mt-9 inline-flex rounded-full bg-white px-8 py-4 text-sm font-semibold text-black transition hover:scale-[1.02] hover:bg-violet-100"
               >
                 Start a Conversation →
               </a>
 
               <p className="mt-5 text-xs text-zinc-600">
-                Replace hello@yourdomain.com with your professional email.
+                 Usually replies within 24–48 hours.
               </p>
             </div>
           </div>
@@ -418,14 +444,26 @@ export default function Home() {
             © {new Date().getFullYear()} Praveen Yadav. All rights reserved.
           </div>
 
-          <div className="flex gap-6">
-            <a href="#" className="transition hover:text-white">
-              LinkedIn
-            </a>
-            <a href="#" className="transition hover:text-white">
-              GitHub
-            </a>
-          </div>
+         <div className="flex gap-6">
+          <a
+            href="https://www.linkedin.com/in/devendra-kumar-yadav-a1753a25/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-white"
+          >
+            LinkedIn
+          </a>
+
+          <a
+            href="https://github.com/praviny7278"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="transition hover:text-white"
+          >
+            GitHub
+          </a>
+         </div>
+
         </div>
       </footer>
 
