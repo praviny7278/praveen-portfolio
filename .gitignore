@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+school_admin.html
+school.html
+src/app/modern-portfolio.tsx
