@@ -58,15 +58,15 @@
 // const projects = [
 //   {
 //     number: "01",
-//     category: "Business Platform",
+//     category: "Business Management",
 //     title: "FlowDesk",
 //     description:
-//       "A centralized operations platform for small businesses to manage customers, bookings, staff and daily operations from one dashboard.",
+//       "A modern operations dashboard for small businesses to manage customers, bookings, staff, payments and daily tasks from one place.",
 //     problem:
-//       "Business operations were spread across spreadsheets, messaging apps and manual follow-ups.",
+//       "Business operations were spread across spreadsheets, WhatsApp messages and manual follow-ups.",
 //     solution:
-//       "A role-based web platform with customer management, booking workflows, dashboards and automated notifications.",
-//     result: "Sample outcome",
+//       "A role-based web application with customer management, booking workflows, dashboards, reminders and activity tracking.",
+//     result: "Illustrative result",
 //     metric: "60%",
 //     metricLabel: "less manual admin work",
 //     technologies: ["Next.js", "TypeScript", "Spring Boot", "PostgreSQL"],
@@ -74,31 +74,79 @@
 //   },
 //   {
 //     number: "02",
-//     category: "SaaS Product",
-//     title: "ClientHub",
+//     category: "Education Platform",
+//     title: "LearnSphere",
 //     description:
-//       "A customer portal that gives service businesses one place to share documents, track requests, communicate with customers and manage projects.",
+//       "A responsive learning platform for schools and coaching institutes with courses, assignments, attendance, notices and student progress.",
 //     problem:
-//       "Customers had limited visibility into project progress and teams spent too much time answering status questions.",
+//       "Students, parents and teachers had to use different tools to manage academic information and communication.",
 //     solution:
-//       "A responsive customer portal with authentication, project timelines, document management and notifications.",
-//     result: "Sample outcome",
-//     metric: "35%",
-//     metricLabel: "faster client communication",
-//     technologies: ["React", "Node.js", "REST API", "Cloud"],
+//       "A centralized portal with separate dashboards for students, parents, teachers and administrators.",
+//     result: "Illustrative result",
+//     metric: "40%",
+//     metricLabel: "faster information access",
+//     technologies: ["React", "Node.js", "REST API", "MongoDB"],
 //     gradient: "from-cyan-500/20 via-blue-500/10 to-transparent",
 //   },
 //   {
 //     number: "03",
+//     category: "Healthcare Software",
+//     title: "CareConnect",
+//     description:
+//       "A sample appointment and patient-management platform designed to simplify scheduling, records and communication for clinics.",
+//     problem:
+//       "Appointments and patient follow-ups were handled through calls, paper records and disconnected spreadsheets.",
+//     solution:
+//       "A secure dashboard with appointment scheduling, patient profiles, reminders and operational reporting.",
+//     result: "Illustrative result",
+//     metric: "30%",
+//     metricLabel: "fewer scheduling gaps",
+//     technologies: ["Next.js", "Spring Boot", "PostgreSQL", "REST"],
+//     gradient: "from-emerald-500/20 via-teal-500/10 to-transparent",
+//   },
+//   {
+//     number: "04",
+//     category: "Customer Portal",
+//     title: "ClientHub",
+//     description:
+//       "A customer portal for service businesses to share documents, track requests, communicate with clients and manage project updates.",
+//     problem:
+//       "Customers had limited visibility into project progress and teams spent too much time answering repetitive status questions.",
+//     solution:
+//       "A responsive portal with authentication, project timelines, document management, notifications and request tracking.",
+//     result: "Illustrative result",
+//     metric: "35%",
+//     metricLabel: "faster client communication",
+//     technologies: ["React", "Node.js", "REST API", "Cloud"],
+//     gradient: "from-sky-500/20 via-blue-500/10 to-transparent",
+//   },
+//   {
+//     number: "05",
+//     category: "E-commerce",
+//     title: "ShopPilot",
+//     description:
+//       "A demo commerce platform with product management, customer accounts, order workflows, search and an admin dashboard.",
+//     problem:
+//       "The business needed a simple online storefront while keeping inventory and order management in one system.",
+//     solution:
+//       "A responsive storefront connected to an administrative dashboard for products, customers and orders.",
+//     result: "Illustrative result",
+//     metric: "2x",
+//     metricLabel: "simpler order workflow",
+//     technologies: ["Next.js", "TypeScript", "Node.js", "PostgreSQL"],
+//     gradient: "from-amber-500/20 via-orange-500/10 to-transparent",
+//   },
+//   {
+//     number: "06",
 //     category: "AI & Automation",
 //     title: "SmartOps",
 //     description:
-//       "An AI-assisted workflow system that connects business tools and automates repetitive data processing and reporting.",
+//       "An AI-assisted workflow system that connects business tools and automates repetitive data processing, summaries and reporting.",
 //     problem:
 //       "Teams were spending hours every week copying information between systems and preparing recurring reports.",
 //     solution:
 //       "API integrations, scheduled workflows and AI-assisted processing that automatically organize incoming information.",
-//     result: "Sample outcome",
+//     result: "Illustrative result",
 //     metric: "10+ hrs",
 //     metricLabel: "saved per week",
 //     technologies: ["AI APIs", "Node.js", "REST", "Automation"],
@@ -929,7 +977,7 @@
 //           <SectionHeading
 //             number="03"
 //             title="Selected work."
-//             description="A few sample projects showing the type of products, platforms and technical problems I can help solve. Demo content below can be replaced with your real projects."
+//             description="A set of illustrative projects showing the type of products, platforms and technical problems I can help solve. Replace the demo content, metrics and technologies with your real work later."
 //           />
 
 //           <div className="mt-14 space-y-5">
@@ -1036,8 +1084,7 @@
 //           <Reveal className="mt-8">
 //             <div className="rounded-2xl border border-dashed border-white/[0.08] px-6 py-5 text-center">
 //               <p className="text-xs text-zinc-600">
-//                 Demo projects shown for presentation purposes — replace
-//                 these with your real work, metrics and case studies.
+//                 Demo projects for presentation only — replace the names, descriptions, metrics and technologies with your real projects and case studies.
 //               </p>
 //             </div>
 //           </Reveal>
@@ -1566,6 +1613,9 @@
 //     </main>
 //   );
 // }
+
+
+
 "use client";
 
 import { useEffect, useRef, useState } from "react";
@@ -1625,6 +1675,9 @@ const projects = [
   {
     number: "01",
     category: "Business Management",
+    status: "Replace with real project",
+    liveUrl: "#",
+    githubUrl: "#",
     title: "FlowDesk",
     description:
       "A modern operations dashboard for small businesses to manage customers, bookings, staff, payments and daily tasks from one place.",
@@ -1641,6 +1694,9 @@ const projects = [
   {
     number: "02",
     category: "Education Platform",
+    status: "Replace with real project",
+    liveUrl: "#",
+    githubUrl: "#",
     title: "LearnSphere",
     description:
       "A responsive learning platform for schools and coaching institutes with courses, assignments, attendance, notices and student progress.",
@@ -1657,6 +1713,9 @@ const projects = [
   {
     number: "03",
     category: "Healthcare Software",
+    status: "Replace with real project",
+    liveUrl: "#",
+    githubUrl: "#",
     title: "CareConnect",
     description:
       "A sample appointment and patient-management platform designed to simplify scheduling, records and communication for clinics.",
@@ -1673,6 +1732,9 @@ const projects = [
   {
     number: "04",
     category: "Customer Portal",
+    status: "Replace with real project",
+    liveUrl: "#",
+    githubUrl: "#",
     title: "ClientHub",
     description:
       "A customer portal for service businesses to share documents, track requests, communicate with clients and manage project updates.",
@@ -1689,6 +1751,9 @@ const projects = [
   {
     number: "05",
     category: "E-commerce",
+    status: "Replace with real project",
+    liveUrl: "#",
+    githubUrl: "#",
     title: "ShopPilot",
     description:
       "A demo commerce platform with product management, customer accounts, order workflows, search and an admin dashboard.",
@@ -1705,6 +1770,9 @@ const projects = [
   {
     number: "06",
     category: "AI & Automation",
+    status: "Replace with real project",
+    liveUrl: "#",
+    githubUrl: "#",
     title: "SmartOps",
     description:
       "An AI-assisted workflow system that connects business tools and automates repetitive data processing, summaries and reporting.",
@@ -1807,6 +1875,48 @@ const technologies = [
   "MongoDB",
   "React Native",
   "AI APIs",
+];
+
+const skillGroups = [
+  {
+    title: "Frontend",
+    description: "Interfaces that are fast, responsive and easy to use.",
+    skills: ["React", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+  },
+  {
+    title: "Backend",
+    description: "APIs and services designed around reliability and maintainability.",
+    skills: ["Node.js", "Spring Boot", "Java", "REST APIs", "Authentication"],
+  },
+  {
+    title: "Data & Cloud",
+    description: "Practical data models, integrations and deployment foundations.",
+    skills: ["PostgreSQL", "MongoDB", "SQL", "Cloud", "Git"],
+  },
+  {
+    title: "Mobile & AI",
+    description: "Cross-platform experiences and useful AI-powered workflows.",
+    skills: ["React Native", "AI APIs", "Automation", "Integrations"],
+  },
+];
+
+const experience = [
+  {
+    period: "2022 — Present",
+    role: "Full-Stack Software Engineer",
+    company: "Your Company / Freelance",
+    description:
+      "Building and maintaining web, mobile and backend systems across the product lifecycle — from requirements and architecture to deployment and optimization.",
+    stack: ["React", "Next.js", "Spring Boot", "Node.js"],
+  },
+  {
+    period: "Earlier experience",
+    role: "Software Development",
+    company: "Add your previous company",
+    description:
+      "Replace this entry with your real role, responsibilities and the outcomes you delivered. Keep the description focused on impact rather than a task list.",
+    stack: ["JavaScript", "Java", "REST APIs"],
+  },
 ];
 
 function CursorGlow() {
@@ -2077,6 +2187,8 @@ export default function Home() {
   const [showContactForm, setShowContactForm] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [activeSection, setActiveSection] = useState("about");
+  const [selectedProject, setSelectedProject] = useState<(typeof projects)[number] | null>(null);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -2107,6 +2219,24 @@ export default function Home() {
 
     return () => window.removeEventListener("keydown", handleKeyDown);
   }, [showContactForm]);
+
+  useEffect(() => {
+    const sections = navItems.map(([, href]) => document.querySelector(href));
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        const visible = entries
+          .filter((entry) => entry.isIntersecting)
+          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+
+        if (visible?.target?.id) setActiveSection(visible.target.id);
+      },
+      { rootMargin: "-20% 0px -65% 0px", threshold: [0.1, 0.25, 0.5] }
+    );
+
+    sections.forEach((section) => section && observer.observe(section));
+    return () => observer.disconnect();
+  }, []);
 
   const handleFormChange = (
     event: React.ChangeEvent<
@@ -2151,8 +2281,10 @@ Thanks!`
 
   const navItems = [
     ["About", "#about"],
+    ["Experience", "#experience"],
     ["Services", "#services"],
     ["Work", "#work"],
+    ["Skills", "#skills"],
     ["Process", "#process"],
   ];
 
@@ -2183,7 +2315,7 @@ Thanks!`
                 <a
                   key={label}
                   href={href}
-                  className="nav-link"
+                  className={`nav-link ${activeSection === href.slice(1) ? "nav-link-active" : ""}`}
                 >
                   {label}
                 </a>
@@ -2326,6 +2458,17 @@ Thanks!`
                 Start a project
               </motion.button>
             </motion.div>
+
+            <div className="mt-5 flex flex-wrap items-center gap-4 text-xs text-zinc-500">
+              <a href="https://github.com/praviny7278" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-1.5 hover:text-white">
+                GitHub <Arrow />
+              </a>
+              <a href="https://www.linkedin.com/in/devendra-kumar-yadav-a1753a25/" target="_blank" rel="noopener noreferrer" className="group inline-flex items-center gap-1.5 hover:text-white">
+                LinkedIn <Arrow />
+              </a>
+              <span className="h-3 w-px bg-white/10" />
+              <span>Open to freelance & product work</span>
+            </div>
 
             <div className="mt-10 grid max-w-xl grid-cols-3 gap-5 border-t border-white/[0.07] pt-6">
               <div>
@@ -2481,11 +2624,47 @@ Thanks!`
         </div>
       </section>
 
+      {/* EXPERIENCE */}
+      <section id="experience" className="relative z-10 border-t border-white/[0.06]">
+        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
+          <div className="grid gap-14 lg:grid-cols-[.65fr_1.35fr]">
+            <SectionHeading
+              number="02"
+              title="Experience that ships products."
+              description="A concise timeline for the roles, companies and outcomes you want clients or recruiters to see."
+            />
+
+            <div className="space-y-3">
+              {experience.map((item, index) => (
+                <Reveal key={`${item.role}-${index}`} delay={index * 0.06}>
+                  <article className="group rounded-2xl border border-white/[0.08] bg-white/[0.02] p-6 transition hover:border-white/[0.14] hover:bg-white/[0.035] sm:p-7">
+                    <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+                      <div>
+                        <p className="text-xs uppercase tracking-[.16em] text-violet-400">{item.period}</p>
+                        <h3 className="mt-3 text-xl font-semibold tracking-tight">{item.role}</h3>
+                        <p className="mt-1 text-sm text-zinc-500">{item.company}</p>
+                      </div>
+                      <span className="text-xs text-zinc-700">0{index + 1}</span>
+                    </div>
+                    <p className="mt-5 max-w-2xl text-sm leading-6 text-zinc-500">{item.description}</p>
+                    <div className="mt-5 flex flex-wrap gap-2">
+                      {item.stack.map((skill) => (
+                        <span key={skill} className="rounded-full border border-white/[0.07] px-2.5 py-1 text-[11px] text-zinc-500">{skill}</span>
+                      ))}
+                    </div>
+                  </article>
+                </Reveal>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* SERVICES */}
       <section id="services" className="relative z-10">
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
           <SectionHeading
-            number="02"
+            number="03"
             title="One partner. The whole product stack."
             description="You bring the problem. I help figure out the right technical solution — from interface and APIs to databases, integrations and deployment."
           />
@@ -2541,9 +2720,9 @@ Thanks!`
       >
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
           <SectionHeading
-            number="03"
+            number="04"
             title="Selected work."
-            description="A set of illustrative projects showing the type of products, platforms and technical problems I can help solve. Replace the demo content, metrics and technologies with your real work later."
+            description="These cards are ready for your real projects. Replace the demo data with your actual work, screenshots, links, metrics and case-study details."
           />
 
           <div className="mt-14 space-y-5">
@@ -2592,7 +2771,23 @@ Thanks!`
                         ))}
                       </div>
 
-                      <div className="mt-9 flex items-center gap-5">
+                      <div className="mt-7 flex flex-wrap gap-2">
+                        <button
+                          type="button"
+                          onClick={() => setSelectedProject(project)}
+                          className="rounded-xl bg-white px-4 py-2.5 text-xs font-semibold text-black transition hover:bg-violet-100"
+                        >
+                          View case study ↗
+                        </button>
+                        <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/10 px-4 py-2.5 text-xs font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/[0.04] hover:text-white">
+                          Live demo ↗
+                        </a>
+                        <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/10 px-4 py-2.5 text-xs font-medium text-zinc-300 transition hover:border-white/20 hover:bg-white/[0.04] hover:text-white">
+                          GitHub ↗
+                        </a>
+                      </div>
+
+                      <div className="mt-5 flex items-center gap-5">
                         <button
                           type="button"
                           onClick={openContactForm}
@@ -2605,6 +2800,17 @@ Thanks!`
                     </div>
 
                     <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+                      <div className="relative min-h-[180px] overflow-hidden rounded-2xl border border-white/[0.07] bg-gradient-to-br from-white/[0.06] via-white/[0.02] to-transparent p-5 sm:col-span-2 lg:col-span-1">
+                        <div className="absolute inset-0 opacity-40 [background-image:linear-gradient(rgba(255,255,255,.07)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.07)_1px,transparent_1px)] [background-size:28px_28px]" />
+                        <div className="relative flex h-full min-h-[140px] flex-col justify-between">
+                          <span className="text-[10px] uppercase tracking-[.18em] text-zinc-600">Project preview</span>
+                          <div>
+                            <p className="text-sm font-medium text-zinc-300">Replace this panel with a real screenshot</p>
+                            <p className="mt-1 text-xs text-zinc-600">Use an image of the dashboard, app or product UI.</p>
+                          </div>
+                        </div>
+                      </div>
+
                       <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-5">
                         <p className="text-[10px] uppercase tracking-[.18em] text-zinc-600">
                           Problem
@@ -2662,7 +2868,7 @@ Thanks!`
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
           <div className="grid gap-14 lg:grid-cols-[.65fr_1.35fr]">
             <SectionHeading
-              number="04"
+              number="05"
               title="Less handoff. More ownership."
             />
 
@@ -2698,7 +2904,7 @@ Thanks!`
       <section className="relative z-10 border-t border-white/[0.06]">
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
           <SectionHeading
-            number="05"
+            number="06"
             title="What I can help you build."
             description="Different problems need different solutions. I choose the architecture and technology based on the users, requirements, timeline and goals."
           />
@@ -2760,7 +2966,7 @@ Thanks!`
           <div className="grid gap-10 lg:grid-cols-[.6fr_1.4fr] lg:items-center">
             <Reveal>
               <p className="section-label">
-                06 / TECHNOLOGIES
+                07 / TECHNOLOGIES
               </p>
 
               <h2 className="mt-5 text-3xl font-semibold tracking-[-.04em] sm:text-4xl">
@@ -2789,6 +2995,36 @@ Thanks!`
         </div>
       </section>
 
+      {/* SKILLS */}
+      <section id="skills" className="relative z-10">
+        <div className="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
+          <SectionHeading
+            number="07"
+            title="A stack organized around outcomes."
+            description="Use this section to show depth without turning your portfolio into a giant list of logos. Replace or reorder the technologies to match your strongest skills."
+          />
+          <div className="mt-14 grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {skillGroups.map((group, index) => (
+              <Reveal key={group.title} delay={index * 0.05}>
+                <div className="h-full rounded-2xl border border-white/[0.08] bg-white/[0.025] p-6 transition hover:border-violet-400/20 hover:bg-white/[0.04]">
+                  <span className="text-xs text-zinc-700">0{index + 1}</span>
+                  <h3 className="mt-8 text-lg font-semibold">{group.title}</h3>
+                  <p className="mt-3 text-sm leading-6 text-zinc-500">{group.description}</p>
+                  <div className="mt-6 space-y-2">
+                    {group.skills.map((skill) => (
+                      <div key={skill} className="flex items-center gap-2 text-sm text-zinc-400">
+                        <span className="h-1 w-1 rounded-full bg-violet-400" />
+                        {skill}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </Reveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* PROCESS */}
       <section
         id="process"
@@ -2797,7 +3033,7 @@ Thanks!`
         <div className="mx-auto max-w-7xl px-5 py-24 sm:px-6 lg:px-8 lg:py-32">
           <div className="grid gap-14 lg:grid-cols-[.65fr_1.35fr]">
             <SectionHeading
-              number="07"
+              number="08"
               title="Simple process. Serious execution."
             />
 
@@ -2856,7 +3092,7 @@ Thanks!`
 
             <Reveal className="relative">
               <p className="section-label">
-                08 / CONTACT
+                09 / CONTACT
               </p>
 
               <h2 className="mx-auto mt-5 max-w-3xl text-4xl font-semibold tracking-[-.04em] sm:text-6xl">
@@ -2929,6 +3165,61 @@ Thanks!`
           </div>
         </div>
       </footer>
+
+      {/* PROJECT CASE STUDY MODAL */}
+      {selectedProject && (
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          className="fixed inset-0 z-[90] flex items-center justify-center bg-black/80 px-4 py-6 backdrop-blur-md"
+          onClick={() => setSelectedProject(null)}
+        >
+          <motion.div
+            initial={{ opacity: 0, scale: 0.96, y: 18 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            className="relative max-h-[90vh] w-full max-w-3xl overflow-y-auto rounded-3xl border border-white/10 bg-[#0b0b0f] p-6 shadow-2xl sm:p-8"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="project-modal-title"
+            onClick={(event) => event.stopPropagation()}
+          >
+            <button type="button" onClick={() => setSelectedProject(null)} className="absolute right-5 top-5 flex h-9 w-9 items-center justify-center rounded-full border border-white/10 text-lg text-zinc-500 hover:bg-white/10 hover:text-white" aria-label="Close project case study">×</button>
+            <p className="text-xs uppercase tracking-[.2em] text-violet-400">{selectedProject.category}</p>
+            <h2 id="project-modal-title" className="mt-3 pr-10 text-3xl font-semibold tracking-tight sm:text-4xl">{selectedProject.title}</h2>
+            <p className="mt-4 max-w-2xl text-sm leading-7 text-zinc-400">{selectedProject.description}</p>
+
+            <div className="mt-7 grid gap-3 sm:grid-cols-2">
+              <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-5">
+                <p className="text-[10px] uppercase tracking-[.18em] text-zinc-600">Problem</p>
+                <p className="mt-3 text-sm leading-6 text-zinc-400">{selectedProject.problem}</p>
+              </div>
+              <div className="rounded-2xl border border-white/[0.07] bg-white/[0.025] p-5">
+                <p className="text-[10px] uppercase tracking-[.18em] text-zinc-600">Solution</p>
+                <p className="mt-3 text-sm leading-6 text-zinc-400">{selectedProject.solution}</p>
+              </div>
+            </div>
+
+            <div className="mt-3 rounded-2xl border border-violet-400/[0.12] bg-violet-400/[0.035] p-5">
+              <p className="text-[10px] uppercase tracking-[.18em] text-violet-300/60">Result</p>
+              <div className="mt-2 flex items-end gap-3">
+                <span className="text-3xl font-semibold tracking-tight">{selectedProject.metric}</span>
+                <span className="pb-1 text-xs text-zinc-500">{selectedProject.metricLabel}</span>
+              </div>
+            </div>
+
+            <div className="mt-7 flex flex-wrap gap-2">
+              {selectedProject.technologies.map((technology) => (
+                <span key={technology} className="rounded-full border border-white/[0.08] px-3 py-1.5 text-[11px] text-zinc-400">{technology}</span>
+              ))}
+            </div>
+
+            <div className="mt-8 flex flex-wrap gap-3">
+              <a href={selectedProject.liveUrl} target="_blank" rel="noopener noreferrer" className="rounded-xl bg-white px-5 py-3 text-sm font-semibold text-black hover:bg-violet-100">Live demo ↗</a>
+              <a href={selectedProject.githubUrl} target="_blank" rel="noopener noreferrer" className="rounded-xl border border-white/10 px-5 py-3 text-sm font-semibold text-white hover:bg-white/[0.05]">View GitHub ↗</a>
+            </div>
+          </motion.div>
+        </motion.div>
+      )}
 
       {/* CONTACT MODAL */}
       {showContactForm && (
